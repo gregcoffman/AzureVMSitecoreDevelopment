@@ -10,7 +10,7 @@ $VmEventLogSource = "AzVMCustomScriptExtension"
 $TdsUrl = "https://www.teamdevelopmentforsitecore.com/-/media/TDS/Files/TDS%20Downloads/TDS%206008.zip"
 $TdsFileName = "Tds6008.zip"
 $SitecorePSRepository = "https://sitecore.myget.org/F/sc-powershell/api/v2"
-$SitecoreFileDlLoc = "ScInst"
+$SitecoreFileDlLoc = "Sitecore"
 $SitecoreFiles = "createcert.json",`
                  "IdentityServer.json",`
                  "Prerequisites.json",`

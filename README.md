@@ -24,7 +24,7 @@ The script performs the following high level tasks:
 [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6) is required.
 
 ## Installation
-1. Copy your Sitecore *license.xml* file to the script location.
+1. Copy your Sitecore *license.xml* file to the local script location.
 2. If necessary, create a new resource group in Azure where this VM will be deployed.
 3. Place the following files are the root of your blog storage container:
 ```
@@ -36,8 +36,10 @@ InstallSolr.ps1
 SharedInstallFunctions.ps1
 sqlexpress.json
 ```
+
 **IMPORTANT: Do not copy files with passwords or other sensitive information tot he Azure public storage!** 
-4. [Download Sitecore](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform.aspx) and place the On Premise Packages for XP Single into the **<YourBlobContainer>/ScInst** (Default Value) folder in your Azure blob storage. The files should include the following:
+
+4. [Download Sitecore](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform.aspx) and place the On Premise Packages for XP Single into the **<YourBlobContainer>/Sitecore** (Default Value) folder in your Azure blob storage. The files should include the following:
 ```
 createcert.json
 IdentityServer.json
