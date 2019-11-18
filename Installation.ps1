@@ -56,7 +56,7 @@ if (-not (Test-Path -Path $licensePath)) {
 
 $rootPath = Split-Path $MyInvocation.MyCommand.Path
 . "$rootPath\Azure.ps1"
-. "$rootPath\VmScripts\SharedInstallFunctions.ps1"
+. "$rootPath\AzureBlobFiles\SharedInstallFunctions.ps1"
 
 #Install AzModule
 if(!$SkipInstallAzModule) { Install-Module -Name Az -AllowClobber -WarningAction stop } 
